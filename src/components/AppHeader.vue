@@ -57,7 +57,9 @@ export default {
 
 
 <template>
-  <div>
+  <div class="wrapper mt-5">
+    <div class="logo"><img class="logo" src="/img/logo.png" alt="Logo"></div>
+  <div class="button-container">
     <div v-for="(dropdown, index) in dropDowns" :key="index" class="dropdown">
       <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
         {{ dropdown.items[0].text }}
@@ -70,6 +72,22 @@ export default {
       </ul>
     </div>
   </div>
+</div>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.wrapper{
+  background-image: url('./img/game-details-banner-bg.png');
+  background-size: cover;
+  height: 100vh;
+}
+.button-container{
+  display: flex;
+  justify-content: flex-end; 
+  margin: 10px;
+}
+.btn{
+  margin-right: 10px;
+  background-color: #94CB53;
+}
+</style>

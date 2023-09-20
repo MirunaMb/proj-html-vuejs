@@ -7,7 +7,6 @@ import AppFooter from './components/AppFooter.vue';
 export default {
   data() {
     return {
-      title: "Hello world"
     }
   },
   components: {AppHeader, AppMain,AppFooter },
@@ -15,7 +14,6 @@ export default {
 </script>
 
 <template>
-  <h1>{{ title }}</h1>
   <AppHeader  />
   <AppMain />
   <AppFooter />
