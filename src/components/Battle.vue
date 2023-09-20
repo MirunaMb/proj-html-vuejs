@@ -6,7 +6,7 @@ export default {
 </script>
 
 <template>
-    <div class="wrapper mt-5">
+    <div class="wrapper ">
         <div class="header-cols">
             <div class="header-left ">
                 <img src="/img/features-illus.png" alt="">
@@ -79,7 +79,7 @@ export default {
     min-width: 500px;
     min-height: 500vh;
     display: flex;
-    margin-top: 150px;
+
 }
 
 // HEADER LEFT
