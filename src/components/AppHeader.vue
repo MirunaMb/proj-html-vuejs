@@ -56,7 +56,7 @@ export default {
 
 
 <template>
-  <div class="wrapper mt-5">
+  <div class="wrapper ">
     <!-- Header Top -->
     <div class="header-top">
       <div class="logo"><img class="logo" src="/img/logo.png" alt="Logo">
@@ -171,7 +171,7 @@ export default {
 // HEADER LEFT
 .header-left {
   width: 50%;
-  height: 100%;
+  height: 100vh;
   position: relative;
   margin-top: 200px;
 }

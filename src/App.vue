@@ -1,7 +1,14 @@
 <script>
 import AppHeader from './components/AppHeader.vue';
-import AppMain from './components/AppMain.vue';
-import AppFooter from './components/AppFooter.vue';
+import Battle from './components/Battle.vue';
+import TrendingBattle from './components/TrendingBattle.vue';
+import FutioFacts from './components/FutioFacts.vue';
+import LiveStreaming from './components/LiveStreaming.vue';
+import FutioFeedback from './components/FutioFeedback.vue';
+import LatestNews from './components/LatestNews.vue';
+// import Footer from './components/Footer.vue';
+
+
 
 
 export default {
@@ -9,15 +16,18 @@ export default {
     return {
     }
   },
-  components: {AppHeader, AppMain,AppFooter },
+  components: { AppHeader, Battle, TrendingBattle, FutioFacts, LiveStreaming, FutioFeedback, LatestNews, },
 };
 </script>
 
 <template>
-  <AppHeader  />
-  <AppMain />
-  <AppFooter />
-
+  <AppHeader />
+  <Battle />
+  <TrendingBattle />
+  <FutioFacts />
+  <LiveStreaming />
+  <FutioFeedback />
+  <LatestNews />
 </template>
 
 <style lang="scss" >
