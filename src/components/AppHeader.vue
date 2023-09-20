@@ -1,5 +1,5 @@
 <script>
-// import MyComponent from "./components/MyComponent.vue";
+import Button from "./components/Button.vue";
 
 export default {
   data() {
@@ -48,7 +48,8 @@ export default {
         ]
       },
       
-    ]
+    ],
+    components: { Button }
   };
 },
 
@@ -58,8 +59,11 @@ export default {
 
 <template>
   <div class="wrapper mt-5">
-    <div class="logo"><img class="logo" src="/img/logo.png" alt="Logo"></div>
-  <div class="button-container">
+    <!-- Header Top -->
+    <div class="header-top">
+      <div class="logo"><img class="logo" src="/img/logo.png" alt="Logo">
+      </div>
+      <div class="button-container">
     <div v-for="(dropdown, index) in dropDowns" :key="index" class="dropdown">
       <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
         {{ dropdown.items[0].text }}
@@ -71,8 +75,32 @@ export default {
         </li>
       </ul>
     </div>
+      </div>
+      <div class="live-streaming">
+    <span>icon</span>
+    <div>
+    <Button >Il mio testo personalizzato</Button >
+    </div>
+      </div>
+    </div>
+    <!-- Header Top -->
+
+    <!-- Header Left -->
+    <div class="header-left">
+      <img src="" alt="">joystick</img>
+      <p></p>
+      <h1></h1>
+      <p></p>
+      <button></button>
+      <p>icon</p>
+    </div>
+    <!-- Header Left -->
+
+    <!-- Header Right -->
+    <div class="header-right">
+    </div>
+     <!-- Header Right -->
   </div>
-</div>
 </template>
 
 <style lang="scss" scoped>
