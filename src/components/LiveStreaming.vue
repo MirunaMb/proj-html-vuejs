@@ -1,4 +1,9 @@
+<script>
+// import MyComponent from "./components/MyComponent.vue";
 
+export default {
+};
+</script>
 
 <template>
     <div class="wrapper">
@@ -61,13 +66,14 @@
 .col {
     position: absolute;
     bottom: 800px;
-    left: 50px;
+    left: 500px;
 }
 
 .col-image {
-    width: 80%;
-    height: 50vh;
+    width: 58%;
+    height: 42vh;
     position: relative;
+    margin-left: 300px;
 
 }
 
@@ -152,11 +158,6 @@
     color: white;
     margin: 10px;
 }
-
-.viewers p {}
-
-
-
 
 // Button Play
 </style>
