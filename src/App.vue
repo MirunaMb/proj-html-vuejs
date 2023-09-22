@@ -6,7 +6,7 @@ import FutioFacts from './components/FutioFacts.vue';
 import LiveStreaming from './components/LiveStreaming.vue';
 import FutioFeedback from './components/FutioFeedback.vue';
 import LatestNews from './components/LatestNews.vue';
-// import Footer from './components/Footer.vue';
+import Footer from './components/Footer.vue';
 
 
 
@@ -16,7 +16,7 @@ export default {
     return {
     }
   },
-  components: { AppHeader, Battle, TrendingBattle, FutioFacts, LiveStreaming, FutioFeedback, LatestNews, },
+  components: { AppHeader, Battle, TrendingBattle, FutioFacts, LiveStreaming, FutioFeedback, LatestNews, Footer },
 };
 </script>
 
@@ -28,6 +28,7 @@ export default {
   <LiveStreaming />
   <FutioFeedback />
   <LatestNews />
+  <Footer />
 </template>
 
 <style lang="scss" >
